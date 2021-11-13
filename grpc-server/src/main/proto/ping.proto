@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.epam.grpc.ping;
+
+option java_package="com.epam.grpc.ping";
+option java_multiple_files = true;
+
+service PingService{
+    rpc getMessage(PingRequest) returns (PingResponse);
+}
+
+message PingRequest{
+    string message = 1;
+}
+
+message PingResponse{
+    string message = 1;
+}

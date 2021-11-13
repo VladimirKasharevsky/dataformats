@@ -1,0 +1,10 @@
+{
+     "type": "record",
+     "namespace": "com.example",
+     "name": "MyMessage",
+     "version": "2",
+     "fields": [
+       { "name": "id", "type": "string", "doc": "message"}
+       { "name": "message", "type": "string", "doc": "message"}
+     ]
+}

@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: grpc-client
+grpc:
+  client:
+    cloud-grpc-server:
+      address: 'discovery:///grpc-server'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
